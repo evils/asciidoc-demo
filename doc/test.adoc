@@ -83,6 +83,6 @@ More info https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_inclu
 == Secondary test
 // asciidoctor only
 // note the leading underscore
-<<test2.adoc#_another_section,second file>> +
-<<test2#_another,bottom of file 2>> +
+<<test2.adoc#another_section,second file>> +
+<<test2#another,bottom of file 2>> +
 <<test2#arbitrary,arbitrary anchor>>
