@@ -2,6 +2,8 @@
 // but on github it's just a link...
 // asciidoctor only (the attribute passing)
 include::doc/test.adoc[pkgsdir=pkgs,nixosdir=nixos,prefix=doc]
+ifndef::env-github[]
 
 I haven't figured out how to make those relative links work from the root directory yet. +
 Go to the link:file:doc/[doc] directory to use them
+endif::env-github[]

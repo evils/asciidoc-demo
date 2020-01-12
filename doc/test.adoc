@@ -83,6 +83,18 @@ More info https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_inclu
 == Secondary test
 // asciidoctor only
 // note the leading underscore
-<<test2.adoc#another_section,second file>> +
+//
+// needs
+ifdef::env-github[]
+<<test2.adoc#another-section,second file>> +
+endif::[]
+ifndef::env-github[]
+<<test2.adoc#_another_section,second file>> +
+endif::[]
+ifdef::env-github[]
 <<test2#another,bottom of file 2>> +
+endif::[]
+ifndef::env-github[]
+<<test2#_another,bottom of file 2>> +
+endif::[]
 <<test2#arbitrary,arbitrary anchor>>
