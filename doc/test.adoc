@@ -14,6 +14,7 @@ Test
 :sectlinks:
 
 :pkgsdir: ../pkgs
+:nixosdir: ../nixos
 
 == A demo for {url-project}[RFC 0064]
 https://github.com/NixOS/rfcs/pull/64
@@ -68,7 +69,7 @@ or the specific filepath...
 i don't know how the options are currently extracted +
 and don't want to waste a few hours figuring it out 😆
 
-They are defined link:../nixos/modules/services/networking/clarissa.nix[here]
+They are defined link:{nixosdir}/modules/services/networking/clarissa.nix[here]
 
 ifndef::env-github[]
 == ommited github section was here

@@ -2,7 +2,8 @@
 :sectlinks:
 :toc:
 :source-highlighter: rouge
-== [[highlighting]] seems like my test setup doesn't do actual highlighting
+== [[highlighting]] highlight test
+If C works, the highlighter is working :D
 // C isn't a valid keyword here :(
 [source,c]
 ----

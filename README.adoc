@@ -1,0 +1,5 @@
+// asciidoctor only (the attribute passing)
+include::doc/test.adoc[pkgsdir=pkgs,nixosdir=nixos,prefix=doc]
+
+I haven't figured out how to make those relative links work from the root directory yet. +
+Go to the link:file:doc/[doc] directory to use them
