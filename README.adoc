@@ -1,3 +1,5 @@
+// with asciidoctor this gets rendered as the actual page
+// but on github it's just a link...
 // asciidoctor only (the attribute passing)
 include::doc/test.adoc[pkgsdir=pkgs,nixosdir=nixos,prefix=doc]
 
