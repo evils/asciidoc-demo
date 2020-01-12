@@ -13,6 +13,8 @@ Test
 :sectanchors:
 :sectlinks:
 
+// github currently doesn't support impolt
+// https://github.com/github/markup/issues/1095
 :pkgsdir: ../pkgs
 :nixosdir: ../nixos
 
@@ -71,6 +73,7 @@ and don't want to waste a few hours figuring it out 😆
 
 They are defined link:{nixosdir}/modules/services/networking/clarissa.nix[here]
 
+// just showing off the conditional blocks
 ifndef::env-github[]
 == ommited github section was here
 endif::[]
@@ -83,8 +86,9 @@ More info https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_inclu
 == Secondary test
 // asciidoctor only
 // note the leading underscore
-//
-// needs
+// needed in asciidoctor
+// git[hub|lab] needs it without and with a -
+// and there doesn't appear to be an env-gitlab being set
 ifdef::env-github[]
 <<test2.adoc#another-section,second file>> +
 endif::[]
