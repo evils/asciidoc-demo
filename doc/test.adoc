@@ -1,0 +1,87 @@
+= Demo
+Evils<evils.devils@protonmail.com>
+Test
+:version: 0.0.1
+:description: a test for {url-project}[RFC 0064]
+:license: MIT
+:keywords: rfc, RFC, 64, 0064, 064, nix, nixos, NixOS, Nix, asciidoc, asciidoctor
+:url-project: https://github.com/NixOS/rfcs/pull/64
+:toc:
+// highlight and coderay don't do nix, pygmentize fails via asciidoctor (python3 issue?)
+:source-highlighter: rouge
+// asciidoctor only
+:sectanchors:
+:sectlinks:
+
+:pkgsdir: ../pkgs
+
+== A demo for {url-project}[RFC 0064]
+https://github.com/NixOS/rfcs/pull/64
+
+I'm fairly new to asciidoc, i definitely think it's better than markdown, especially for this application. +
+Don't take any shortcomings in this demo as being due to asciidoc unless a source can be found for this.
+
+== An example of code blocks
+// this isn't intended to be a valid nix file...
+.test.nix
+[source,nix]
+----
+{ stdenv, lib
+, callPackages
+}:
+
+let
+  tests = callPackages ./tests.nix; # <1> <2>
+in
+stdenv.mkDerivation {
+  src = ./source;
+  buildInputs = tests;
+  meta.license = licenses.bsd3;
+};
+----
+<1> callPackages accepts multiple attribute sets, see https://nixos.org/nix/manual/#ex-hello-composition-co-3[here]
+<2> the callouts in the codeblock are not links... https://discuss.asciidoctor.org/callouts-with-link-functionality-td7390.html[nor can they be?]
+
+== Clarissa
+// this has to be defined at the start of a section
+:clar: {pkgsdir}/tools/networking/clarissa/default.nix
+Sourced from its actual file
+
+.{clar}
+[source,nix,linenums,highlight]
+----
+include::{clar}[]
+----
+<2> updates available https://gitlab.com/evils/clarissa[here]
+<3> this is <3> adoc fixes this numbering and warns about mismatches
+
+=== Description
+[source,indent=0]
+----
+include::{pkgsdir}/tools/networking/clarissa/default.nix[lines=24..26]
+----
+TIP: not sure how to supply the line numbers, but that's nix specific... +
+or the specific filepath...
+
+=== options
+*TODO* +
+i don't know how the options are currently extracted +
+and don't want to waste a few hours figuring it out 😆
+
+They are defined link:../nixos/modules/services/networking/clarissa.nix[here]
+
+ifndef::env-github[]
+== ommited github section was here
+endif::[]
+ifdef::env-github[]
+== optional block
+This block is only shown if this file is shown in github. +
+endif::[]
+More info https://github.com/asciidoctor/asciidoctor.org/blob/master/docs/_includes/conditional-preprocessor-directives.adoc[here].
+
+== Secondary test
+// asciidoctor only
+// note the leading underscore
+<<test2.adoc#_another_section,second file>> +
+<<test2#_another,bottom of file 2>> +
+<<test2#arbitrary,arbitrary anchor>>
