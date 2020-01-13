@@ -13,7 +13,7 @@ Test
 :sectanchors:
 :sectlinks:
 
-// github currently doesn't support impolt
+// github currently doesn't support import
 // https://github.com/github/markup/issues/1095
 :pkgsdir: ../pkgs
 :nixosdir: ../nixos
