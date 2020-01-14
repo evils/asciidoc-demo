@@ -1,6 +1,6 @@
-===
+==============
 highlight test
-===
+==============
 
 If C works, the highlighter is working :D
 .. TBD, is C a valid keyword?
@@ -15,9 +15,9 @@ If C works, the highlighter is working :D
                  * 1000000 + (x->tv_usec - y->tv_usec));
  }
 
-===
+==================
 a bunch of nothing
-===
+==================
 
 .. highlight:: nothing
  nothing
@@ -74,14 +74,14 @@ _arbitrary:
  nothing
  nothing
  nothing
-===
+===============
 another section
-===
+===============
 just here to test section linking
 
-===
+============
 more nothing
-===
+============
 .. highlight:: nothing
  nothing
  nothing
@@ -135,6 +135,6 @@ more nothing
  nothing
  nothing
  nothing
-===
+=======
 another
-===
+=======
