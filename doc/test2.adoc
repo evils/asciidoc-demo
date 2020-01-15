@@ -2,6 +2,7 @@
 :sectlinks:
 :toc:
 :source-highlighter: rouge
+:stem: latexmath
 == [[highlighting]] highlight test
 If C works, the highlighter is working :D
 // C isn't a valid keyword here :(
@@ -139,3 +140,10 @@ just here to test section linking
 ```
 
 == another
+latexmath:[\LaTeX] can be used here
+[latexmath]
+++++
+$f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n$
+++++
+
+This is an *inline* equation: latexmath:[$f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n$].
