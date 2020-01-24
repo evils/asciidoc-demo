@@ -1,6 +1,6 @@
 :sectanchors:
 :sectlinks:
-:toc:
+:toc2:
 :source-highlighter: rouge
 :stem: latexmath
 == [[highlighting]] highlight test

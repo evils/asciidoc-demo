@@ -6,7 +6,7 @@ Test
 :license: MIT
 :keywords: rfc, RFC, 64, 0064, 064, nix, nixos, NixOS, Nix, asciidoc, asciidoctor
 :url-project: https://github.com/NixOS/rfcs/pull/64
-:toc:
+:toc2:
 // highlight and coderay don't do nix, pygmentize fails via asciidoctor (python3 issue?)
 :source-highlighter: rouge
 // asciidoctor only
